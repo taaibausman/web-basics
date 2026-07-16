@@ -1,1 +1,2 @@
 # web-basics
+While styling the profile card, I initially found the difference between margin and padding confusing because both add space around elements. After experimenting with different values, I understood that padding adds space inside an element's border, while margin adds space outside it. I also spent some time adjusting box-shadow and border-radius to make the card look clean and modern. Practicing with different values helped me understand how these CSS properties affect the overall design.
