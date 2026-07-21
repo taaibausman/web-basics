@@ -1,2 +1,5 @@
 # web-basics
+## Task 1
 While styling the profile card, I initially found the difference between margin and padding confusing because both add space around elements. After experimenting with different values, I understood that padding adds space inside an element's border, while margin adds space outside it. I also spent some time adjusting box-shadow and border-radius to make the card look clean and modern. Practicing with different values helped me understand how these CSS properties affect the overall design.
+## Task 2
+Flexbox was easy to use for arranging the pricing cards in a single row and aligning items, but controlling multiple rows and columns would become more difficult in larger layouts. CSS Grid made creating the three-column layout much simpler because the columns were defined directly with grid-template-columns. For this pricing section, Grid required less code and provided better control over the overall page structure, while Flexbox felt more suitable for arranging items in a single direction. Both layouts became responsive easily using a media query that stacked the cards into one column below 600px.
