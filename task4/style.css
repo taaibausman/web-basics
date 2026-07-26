@@ -1,0 +1,554 @@
+/* ===========================
+   GOOGLE FONTS & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#F6F6F6;
+    color:#2B2B2B;
+    overflow-x:hidden;
+}
+
+
+/* ===========================
+   COLOR VARIABLES
+=========================== */
+
+:root{
+
+    --primary:#E6D0DE;
+    --secondary:#F3E5EF;
+    --background:#F6F6F6;
+    --white:#FFFFFF;
+    --text:#2B2B2B;
+    --accent:#A79AA4;
+
+}
+
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+    background:linear-gradient(180deg,#F6F6F6,#F3E5EF);
+
+}
+
+nav{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:25px 8%;
+
+}
+
+.logo h2{
+
+    font-family:'Allura',cursive;
+    font-size:42px;
+    color:var(--text);
+
+}
+
+.logo span{
+
+    font-size:14px;
+    letter-spacing:3px;
+    color:var(--accent);
+    text-transform:uppercase;
+
+}
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+    color:var(--text);
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#b9849d;
+
+}
+
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero-content{
+
+    width:90%;
+    margin:auto;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    min-height:85vh;
+
+}
+
+.hero-text{
+
+    width:50%;
+
+}
+
+.tagline{
+
+    color:#b9849d;
+    font-weight:600;
+    margin-bottom:15px;
+
+}
+
+.hero-text h1{
+
+    font-size:62px;
+    line-height:1.2;
+    margin-bottom:25px;
+
+}
+
+.hero-text h1 span{
+
+    color:#c88ca8;
+    font-family:'Allura',cursive;
+    font-size:80px;
+
+}
+
+.description{
+
+    color:#555;
+    line-height:1.9;
+    margin-bottom:35px;
+
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.hero-buttons{
+
+    display:flex;
+    gap:20px;
+
+}
+
+button{
+
+    cursor:pointer;
+    border:none;
+    border-radius:40px;
+
+    padding:15px 35px;
+
+    font-size:16px;
+    font-weight:600;
+
+    transition:
+    transform .35s,
+    box-shadow .35s,
+    background .35s,
+    color .35s;
+
+}
+
+.primary-btn{
+
+    background:var(--primary);
+    color:var(--text);
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-6px);
+
+    background:#dcbccc;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.12);
+
+}
+
+.secondary-btn{
+
+    background:transparent;
+    border:2px solid var(--primary);
+    color:var(--text);
+
+}
+
+.secondary-btn:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-6px);
+
+}
+
+
+/* ===========================
+   HERO IMAGE
+=========================== */
+
+.hero-image{
+
+    width:40%;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:400px;
+    border-radius:30px;
+
+    position:relative;
+    z-index:2;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+.floating-circle{
+
+    position:absolute;
+
+    width:320px;
+    height:320px;
+
+    background:var(--primary);
+
+    opacity:.45;
+
+    border-radius:50%;
+
+    animation:pulse 5s infinite;
+
+}
+
+
+/* ===========================
+   KEYFRAME ANIMATIONS
+=========================== */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+
+/* ===========================
+   FEATURES
+=========================== */
+
+#features{
+
+    padding:100px 8%;
+
+}
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.section-title p{
+
+    color:#b9849d;
+    font-weight:600;
+    margin-bottom:10px;
+
+}
+
+.section-title h2{
+
+    font-size:42px;
+
+}
+
+.feature-container{
+
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+
+}
+
+.card{
+
+    width:320px;
+
+    background:white;
+
+    padding:40px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:
+    transform .4s,
+    box-shadow .4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+.icon{
+
+    font-size:45px;
+    margin-bottom:20px;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    line-height:1.8;
+    color:#666;
+
+}
+
+
+/* ===========================
+   SCROLL ANIMATION
+=========================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(70px);
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+    transition:
+    opacity .8s ease,
+    transform .8s ease;
+
+}
+
+
+/* ===========================
+   CTA
+=========================== */
+
+#cta{
+
+    background:var(--secondary);
+
+    text-align:center;
+
+    padding:90px 20px;
+
+}
+
+#cta h2{
+
+    font-size:45px;
+    margin-bottom:20px;
+
+}
+
+#cta p{
+
+    max-width:700px;
+
+    margin:auto auto 35px;
+
+    line-height:1.8;
+
+    color:#555;
+
+}
+
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media(max-width:992px){
+
+.hero-content{
+
+    flex-direction:column-reverse;
+    text-align:center;
+    gap:50px;
+
+}
+
+.hero-text,
+.hero-image{
+
+    width:100%;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-text h1{
+
+    font-size:48px;
+
+}
+
+.hero-text h1 span{
+
+    font-size:60px;
+
+}
+
+nav{
+
+    flex-direction:column;
+    gap:20px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-image img{
+
+    width:280px;
+
+}
+
+.hero-text h1{
+
+    font-size:38px;
+
+}
+
+.hero-text h1 span{
+
+    font-size:50px;
+
+}
+
+.section-title h2{
+
+    font-size:32px;
+
+}
+
+#cta h2{
+
+    font-size:34px;
+
+}
+
+button{
+
+    width:100%;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+}
